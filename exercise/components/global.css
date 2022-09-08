@@ -14,6 +14,8 @@
   --contrast-text: #f8f8f2;
   --accent-1: #ff5555;
   --accent-2: #50fa7b;
+
+  --font-size-rule: 14px;
 }
 
 @media (prefers-color-scheme: light) {
@@ -22,5 +24,21 @@
     --medium: #b3b3ae;
     --light: #f8f8f2;
     --contrast-text: #282a36;
+  }
+}
+
+body {
+  font-size: var(--font-size-rule);
+}
+
+@media (min-width: 600px) {
+  :root {
+    --font-size-rule: 16px;
+  }
+}
+
+@media (min-width: 1000px) {
+  :root {
+    --font-size-rule: 18px;
   }
 }
